@@ -1,4 +1,4 @@
-import { Category } from '../models/Category'
+import { Category } from "../models/Category";
 
 interface ICreateCategoryDTO {
   name: string;
@@ -6,7 +6,7 @@ interface ICreateCategoryDTO {
 }
 
 class CategoriesRepository {
-  private categories: Category[] ;
+  private categories: Category[];
 
   constructor() {
     this.categories = [];
@@ -20,7 +20,7 @@ class CategoriesRepository {
       description,
       created_at: new Date(),
     });
-    
+
     this.categories.push(category);
   }
 
